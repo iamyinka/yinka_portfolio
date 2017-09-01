@@ -14,7 +14,7 @@
 
 ```ruby
 def say_hello
-	puts "Hello"
+puts "Hello"
 end
 ```
 
