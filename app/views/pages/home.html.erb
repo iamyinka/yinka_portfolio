@@ -1,2 +1,22 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<style type="text/css">
+	.container {
+		width: 60%;
+		margin: 20px auto;
+		border: 1px solid #ddd;
+		padding: 20px;
+	}
+</style>
+<div class="container">
+
+<h1>Welcome | Home Page</h1>
+
+<h2>Blogs</h2>
+
+<%= @blogs %>
+
+<h2>Skill Set</h2>
+	<%= @skills %>
+
+
+<h2>Portfolios</h2>
+	<%= @portfolios.first(7) %>
