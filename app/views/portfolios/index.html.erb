@@ -1,4 +1,4 @@
-<div class="container">
+
 	<h1>Porfolio Items</h1>
 
 	<% @portfolio_items.each do |item| -%>
@@ -6,8 +6,7 @@
 		<p>Title: <%= item.title -%></p>
 		<p>Subtitle: <%= item.subtitle -%></p>
 		<p>Body: <%= item.body -%></p>
-		<p>Thumb Image: <%= link_to (image_tag(item.thumb_image)) %></p>
+		<p>Thumb Image: <%= link_to (image_tag(item.thumb_image)) if !item.thumb_image.nil? %></p>
 		<p><%= "*" * 80 -%></p>
 
 	<% end -%>
-</div>
